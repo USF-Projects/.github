@@ -2,7 +2,7 @@
 <div align="center">
   <h1>USF Projects - Engenharia de Computação</h1>
   <br />
-  <img src="https://raw.githubusercontent.com/USF-Projects/.github/main/profile/usf-tech-logo.png" width="150" alt="USF Tech Logo" />
+  <img src="https://raw.githubusercontent.com/USF-Projects/.github/main/usf-tech-logo.png" width="150" alt="USF Tech Logo" />
   <br />
   <h3>Universidade São Francisco</h3>
   <p>Vitrine Tecnológica do Curso de Engenharia de Computação</p>
