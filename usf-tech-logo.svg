@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente de fundo Deep Tech / Cyber Dark -->
+    <radialGradient id="cyberBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1d1c" />
+      <stop offset="50%" stop-color="#071317" />
+      <stop offset="100%" stop-color="#020608" />
+    </radialGradient>
+
+    <!-- Gradiente Verde Esmeralda / Tech Core Sólido -->
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Padrão de Pontos Matriz Digital (Dot Matrix) -->
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#10B981" opacity="0.18" />
+    </pattern>
+  </defs>
+
+  <!-- Base quadrada com cantos totalmente retos -->
+  <rect width="512" height="512" fill="url(#cyberBg)" />
+
+  <!-- Camada 1: Matriz de Pontos de Dados -->
+  <rect width="512" height="512" fill="url(#dotGrid)" />
+
+  <!-- Camada 2: Moldura de Chip / Cantoneiras Digitais -->
+  <g stroke="#10B981" stroke-width="1.8" fill="none" opacity="0.35">
+    <!-- Topo esquerdo -->
+    <path d="M 25 75 L 25 25 L 75 25" />
+    <circle cx="25" cy="25" r="3" fill="#10B981" />
+    <path d="M 35 45 L 55 25" />
+
+    <!-- Topo direito -->
+    <path d="M 487 75 L 487 25 L 437 25" />
+    <circle cx="487" cy="25" r="3" fill="#10B981" />
+    <path d="M 477 45 L 457 25" />
+
+    <!-- Base esquerda -->
+    <path d="M 25 437 L 25 487 L 75 487" />
+    <circle cx="25" cy="487" r="3" fill="#10B981" />
+    <path d="M 35 467 L 55 487" />
+
+    <!-- Base direita -->
+    <path d="M 487 437 L 487 487 L 437 487" />
+    <circle cx="487" cy="487" r="3" fill="#10B981" />
+    <path d="M 477 467 L 457 487" />
+  </g>
+
+  <!-- Camada 3: Malha de Circuito Impresso / PCB Traces com Nós -->
+  <g stroke="url(#neonGreen)" stroke-width="2" fill="none" opacity="0.45">
+    <!-- Linhas esquerdas -->
+    <path d="M 10 180 H 75 L 115 140 H 160" />
+    <circle cx="10" cy="180" r="3.5" fill="#34D399" />
+    <circle cx="160" cy="140" r="4" fill="#00F2FE" />
+
+    <path d="M 15 330 H 90 L 130 370 H 180" />
+    <circle cx="15" cy="330" r="3.5" fill="#34D399" />
+    <circle cx="180" cy="370" r="4" fill="#10B981" />
+
+    <path d="M 120 500 V 430 L 150 400" />
+    <circle cx="120" cy="500" r="3" fill="#34D399" />
+
+    <!-- Linhas direitas -->
+    <path d="M 502 190 H 430 L 390 150 H 340" />
+    <circle cx="502" cy="190" r="3.5" fill="#34D399" />
+    <circle cx="340" cy="150" r="4" fill="#00F2FE" />
+
+    <path d="M 495 340 H 420 L 380 380 H 330" />
+    <circle cx="495" cy="340" r="3.5" fill="#34D399" />
+    <circle cx="330" cy="380" r="4" fill="#10B981" />
+
+    <path d="M 390 500 V 435 L 360 405" />
+    <circle cx="390" cy="500" r="3" fill="#34D399" />
+  </g>
+
+  <!-- Linhas de Barramento Binário Sutil no Fundo -->
+  <g stroke="#00F2FE" stroke-width="1" stroke-dasharray="4,6" fill="none" opacity="0.25">
+    <line x1="60" y1="210" x2="452" y2="210" />
+    <line x1="75" y1="300" x2="437" y2="300" />
+  </g>
+
+  <!-- Camada 4: Elemento Central (USF 100% Nítido e Sólido) -->
+  <text x="256" y="310" 
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        font-size="165" 
+        font-weight="900" 
+        font-style="italic" 
+        letter-spacing="-3"
+        text-anchor="middle" 
+        fill="url(#neonGreen)">
+    USF
+  </text>
+</svg>
